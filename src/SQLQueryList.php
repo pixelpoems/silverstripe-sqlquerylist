@@ -253,7 +253,7 @@ class SQLQueryList extends ModelData implements SS_List
         user_error("SQLQueryList doesn't implement reverse");
     }
 
-    public function limit(?int $length, int $offset = 0): SS_List
+    public function limit(?int $limit, int $offset = 0): SS_List
     {
         $this->query->setLimit($limit, $offset);
 
